@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Ubuntu", sans-serif;
+}
+
+.logo {
+    width: 50px;
+    margin-right: auto;
+    cursor: pointer;
+}
+
+.cakar {
+    color: rgb(255, 255, 255);
+    margin-right: auto;
+}
+
+li, a {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+
+header {
+    background: #01352C;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px 10%;
+    position: sticky;
+    overflow: auto;
+}
+
+header.sticky {
+    padding: 15px 100px;
+    background: #4E9F3D;
+    box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.3);
+    top: 0;
+    width: 100%;
+}
+
+.nav_links {
+    list-style: none;
+}
+
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.nav_links li a {
+    transition: all 0.3s ease 0s;
+}
+
+.nav_links li a:hover {
+    color: #f0ff22;
+}
+
+#content {
+    float: left;
+    width: 70%;
+    padding-left: 50px;
+}
+
+aside {
+    float: right;
+    width: 30%;
+    padding-left: 20px;
+    padding-right: 50px;
+}
+
+main {
+    padding: 30px;
+    overflow: auto;
+}
+
+.card {
+    box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.09);
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 15px;
+}
+
+footer {
+    padding: 18px;
+    color: white;
+    background-color: #01352C;
+    text-align: center;
+    font-weight: none;
+}
+
+th {
+    text-align: left;
+}
+
+td {
+    padding-left: 15px;
+}
+
+.fotoby {
+    padding-top: 10px;
+    text-align: center;
+}
+
+.container {
+    padding-top: 10px;
+}
+
+.container h3 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #01352C;
+    padding: 5px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.container .image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container .image-container .image {
+    width: 340px;
+    border: 5px solid #fff;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container .image-container .image img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+}
+
+.container .image-container .image:hover img{
+    transform: scale(1.2);
+}
+
+.container .popup-img {
+    position: fixed;
+    top: 0; left: 0;
+    background: rgba(0,0,0,0.9);
+    height: 100%;
+    width: 100%;
+    z-index: 100;
+    display: none;
+}
+
+.container .popup-img span {
+    position: absolute;
+    top: 30px; right: 100px;
+    font-size: 35px;
+    color: white;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.container .popup-img img {
+    position: absolute;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    width: 750px;
+    object-fit: cover;
+}
+
+.card h2 {
+    padding-bottom: 10px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.card p {
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+.profile img {
+    border-radius: 12px;
+    width: 70%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.profile .head {
+    text-align: center;
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.profile .head h4 {
+    padding-bottom: 20px;
+}
+
+figcaption {
+    font-weight: bold;
+    font-size: large;
+    padding-top: 10px;
+}
+
+.card h3 {
+    text-align: center;
+    padding-bottom: 14px;
+
+}
+
+.icons {
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    box-sizing: border-box !important;
+    justify-content: center;
+}
+
+.icons .my-icon {
+    box-sizing: border-box !important;
+    color: gray;
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    width: calc(99% / 3) !important;
+}
+
+.my-icon img {
+    height: 40px;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+}
+
+.my-icon:hover img {
+    transform: scale(1.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+@media screen and (max-width:1100px) {
+    #content,
+    aside {
+        width: 100%;
+        padding: 0;
+    }
+    .container .popup-img img{
+        width: 80%;
+    }
+}
